@@ -214,7 +214,7 @@
         </Anchors>
         <Size x="40" y="15"></Size>
     </Button>	
-    <Frame name="SpyStatsFrame" parent="UIParent" frameStrata="MEDIUM" movable="true" toplevel="true" enableMouse="true" hidden="true">
+    <Frame name="SpyStatsFrame" parent="UIParent" frameStrata="MEDIUM" movable="true" toplevel="true" enableMouse="true" hidden="true" inherits="BackdropTemplate">
         <Size x="1100" y="610" />		
         <Anchors>
             <Anchor point="CENTER" />
@@ -376,7 +376,7 @@
                             </OnClick>
                         </Scripts>
                     </Button> 
-                    <Frame name="$parentTabContentFrame">
+                    <Frame name="$parentTabContentFrame" inherits="BackdropTemplate">
                         <Anchors>
                             <Anchor point="TOPLEFT">
                                 <Offset x="0" y="-22" />
@@ -678,7 +678,7 @@
                     </OnLoad>
                 </Scripts>
             </Frame>
-            <EditBox name="SpyStatsFilterBox" autoFocus="false" multiLine="false">
+            <EditBox name="SpyStatsFilterBox" autoFocus="false" multiLine="false" inherits="BackdropTemplate">
                 <Anchors>
                     <Anchor point="LEFT" relativeTo="$parentFilterText" relativePoint="RIGHT" />
                 </Anchors>
@@ -775,7 +775,7 @@
         </Frames>
         <Scripts>
             <OnLoad>
-                self:SetBackdropColor(0,0,0,.95)
+                -self:SetBackdropColor(0,0,0,.95)
             </OnLoad>
             <OnShow>
 <!--                PlaySound("igCharacterInfoTab") Error in v7.3 -->

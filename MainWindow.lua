@@ -807,7 +807,7 @@ function Spy:CreateMainWindow()
 	end
 
 	if not Spy.AlertWindow then
-		Spy.AlertWindow = CreateFrame("Frame", "Spy_AlertWindow", UIParent)
+		Spy.AlertWindow = CreateFrame("Frame", "Spy_AlertWindow", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		Spy.AlertWindow:ClearAllPoints()
 --		Spy.AlertWindow:SetPoint("TOP", UIParent, "TOP", 0, -140)
 		Spy.AlertWindow:SetClampedToScreen(true)
@@ -822,7 +822,7 @@ function Spy:CreateMainWindow()
 		})
 		Spy.Colors:RegisterBackground("Alert", "Background", Spy.AlertWindow)
 
-		Spy.AlertWindow.Icon = CreateFrame("Frame", nil, Spy.AlertWindow)
+		Spy.AlertWindow.Icon = CreateFrame("Frame", nil, Spy.AlertWindow, BackdropTemplateMixin and "BackdropTemplate")
 		Spy.AlertWindow.Icon:ClearAllPoints()
 		Spy.AlertWindow.Icon:SetPoint("TOPLEFT", Spy.AlertWindow, "TOPLEFT", 6, -5)
 		Spy.AlertWindow.Icon:SetWidth(32)

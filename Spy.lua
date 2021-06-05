@@ -7,7 +7,7 @@ local fonts = SM:List("font")
 local _
 
 Spy = LibStub("AceAddon-3.0"):NewAddon("Spy", "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceTimer-3.0")
-Spy.Version = "1.1.2"
+Spy.Version = "2.0.0"
 Spy.DatabaseVersion = "1.1"
 Spy.Signature = "[Spy]"
 Spy.ButtonLimit = 15
@@ -1909,15 +1909,17 @@ function Spy:ZoneChanged()
 		end
 	end
 
-	if Spy.EnabledInZone then
-		if not Spy.db.profile.HideSpy then
-			if not InCombatLockdown() then Spy.MainWindow:Show() end
-			Spy:RefreshCurrentList()
+	if Spy.MainWindow ~= nil then
+		if Spy.EnabledInZone then
+			if not Spy.db.profile.HideSpy then
+				if not InCombatLockdown() then Spy.MainWindow:Show() end
+				Spy:RefreshCurrentList()
+			end
+		else
+			if not InCombatLockdown() then Spy.MainWindow:Hide() end
 		end
-	else
-		if not InCombatLockdown() then Spy.MainWindow:Hide() end
+		Spy:UpdateMainWindow()
 	end
-	Spy:UpdateMainWindow()
 end
 
 function Spy:InFilteredZone(subzone)
