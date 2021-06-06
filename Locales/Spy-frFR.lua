@@ -293,7 +293,7 @@ L["HonorKills"] = "l'honneur tue"
 L["PvPDeaths"] = "Décès JcJ"
 
 -- Output Messages
-L["VersionCheck"] = "|cffc41e3aAttention! La mauvaise version de Spy est installée. Supprimez cette version et installez Spy Classic."
+L["VersionCheck"] = "|cffc41e3aAttention! La mauvaise version de Spy est installée. Supprimez cette version et installez Spy TBC Classic."
 L["SpyEnabled"] = "|cff9933ffAddon SPY activé"
 L["SpyDisabled"] = "|cff9933ffAddon SPY désactivé. Taper |cffffffff/spy show|cff9933ff pour l'activer"
 L["UpgradeAvailable"] = "|cff9933ffUne nouvelle version de Spy est disponible. Elle peut être téléchargée à partir de:\n|cffffffffhttps://www.curseforge.com/wow/addons/spy-classic"

@@ -293,7 +293,7 @@ L["HonorKills"] = "荣誉击杀"
 L["PvPDeaths"] = "PvP 死亡"
  
 -- Output Messages
-L["VersionCheck"] = "|cffc41e3a警告！ 安装了错误的Spy版本。 删除此版本并安装Spy Classic。"
+L["VersionCheck"] = "|cffc41e3a警告！ 安装了错误的Spy版本。 删除此版本并安装Spy TBC Classic。"
 L["SpyEnabled"] = "|cff9933ffSpy 侦测敌方玩家插件已启动。"
 L["SpyDisabled"] = "|cff9933ffSpy 侦测敌方玩家插件已关闭。 输入 |cffffffff/spy show|cff9933ff 启动插件。"
 L["UpgradeAvailable"] = "|cff9933ff新版Spy 侦测敌方玩家 已有新的版本。 可以从这里下载新版本：\n|cffffffffhttps://www.curseforge.com/wow/addons/spy-classic"

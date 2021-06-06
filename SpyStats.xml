@@ -775,7 +775,7 @@
         </Frames>
         <Scripts>
             <OnLoad>
-                -self:SetBackdropColor(0,0,0,.95)
+                self:SetBackdropColor(0,0,0,.95)
             </OnLoad>
             <OnShow>
 <!--                PlaySound("igCharacterInfoTab") Error in v7.3 -->
